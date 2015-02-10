@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title>Motemote</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="controller.css">
+    <link href='http://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
+  </head>
+  <body style="display: none">
+    <div id="options">
+      <h1>Enter name: </h1>
+      <br>
+      <input type="text" name="name" id="name" maxlength="10"></input>
+
+      <section id="fighterchooser">
+      <h1>Choose character: </h1>
+          <label>
+            <input type="radio" name="fighterChoice" value="fighter1" checked="checked" />
+            <img src="../images/fighter1.png">
+          </label>
+          <label>
+            <input type="radio" name="fighterChoice" value="fighter2" />
+            <img src="../images/fighter2.png">
+          </label>
+          <label>
+            <input type="radio" name="fighterChoice" value="fighter3" />
+            <img src="../images/fighter3.png">
+          </label>
+          <label>
+            <input type="radio" name="fighterChoice" value="fighter4" />
+            <img src="../images/fighter4.png">
+          </label>
+          <label>
+            <input type="radio" name="fighterChoice" value="fighter5" />
+            <img src="../images/fighter5.png">
+          </label>
+      </section>
+
+
+      <section id="colorchooser">
+      <h1>Choose color: </h1>
+          <label>
+            <input type="radio" name="colorChoice" value="b5ab9d" checked="checked" />
+            <div class="color" style="background-color:#b5ab9d"></div>
+          </label>
+          <label>
+            <input type="radio" name="colorChoice" value="ff3e2f" />
+            <div class="color" style="background-color:#ff3e2f"></div>
+          </label>
+          <label>
+            <input type="radio" name="colorChoice" value="f892ac" />
+            <div class="color" style="background-color:#f892ac"></div>
+          </label>
+          <label>
+            <input type="radio" name="colorChoice" value="82d9f2" />
+            <div class="color" style="background-color:#82d9f2"></div>
+          </label>
+          <label>
+            <input type="radio" name="colorChoice" value="f6b13a" />
+            <div class="color" style="background-color:#f6b13a"></div>
+          </label>
+          <label>
+            <input type="radio" name="colorChoice" value="7a7af8" />
+            <div class="color" style="background-color:#7a7af8"></div>
+          </label>
+          <label>
+            <input type="radio" name="colorChoice" value="a9dc58" />
+            <div class="color" style="background-color:#a9dc58"></div>
+          </label>
+          <label>
+            <input type="radio" name="colorChoice" value="f0ea85" />
+            <div class="color" style="background-color:#f0ea85"></div>
+          </label>
+
+
+      </section>
+    </div>
+    <section id="stats" style="display:none;">
+      <div id="character"></div>
+      Kills: <span id="kills">0</span><span style="display:inline-block;width:15px;"></span>
+      Deaths: <span id="deaths">0</span>
+      <br>
+    </section>
+
+    <section id="controls" style="display:none;">
+      (Touch to move:)
+      <br>
+      <br>
+     <div id="joystick">
+       <img id="circlepad" src="images/joystick.png"></img>
+     </div>
+    </section>
+
+    <section>
+      Play mode:
+        <label>
+            <input type="radio" name="controlChoice" value="joystick" checked="checked" />
+            <div class="mode">JOYSTICK</div>
+          </label>
+          <label>
+            <input type="radio" name="controlChoice" value="tilt" />
+            <div class="mode"> TILT</div>
+          </label>
+      <br><br>
+    </section>
+
+    <button id="join">JOIN</button>
+
+    <script src="app.js"></script>
+    <script>
+      require("controller/main")
+    </script>
+  </body>
+</html>

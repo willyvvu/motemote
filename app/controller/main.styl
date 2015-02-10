@@ -1,0 +1,124 @@
+@font-face
+  src: url(../Karla-Regular.ttf)
+  font-family Karla
+  font-weight normal
+
+@font-face
+  src: url(../Karla-Bold.ttf)
+  font-family Karla
+  font-weight 700
+
+
+body
+  font-family Karla, Arial, sans-serif
+  color black
+  text-align center
+
+h1
+  font-size 26px
+  font-weight 700
+
+img
+  width 80px
+  height 80px
+
+#join
+  width 140px
+  height 60px
+  background white
+  border 2.5px solid black
+  border-radius 6px
+  font-family Karla, Arial, sans-serif
+  font-weight 700
+  font-size 22px
+  margin-bottom 22px
+
+#name
+  width 280px
+  height 20px
+  margin-top -20px
+  font-family Karla
+  font-size 20px
+  padding 10px
+
+#fighterchooser
+  width 100%
+  height auto
+  img
+    width 15%
+    height auto
+
+#colorchooser
+  width 100%
+  height auto
+  text-align center
+  overflow hidden
+  padding-bottom 20px 
+
+#joystick
+  text-align center
+
+.color
+  width 20px
+  height 20px
+  border-radius 100%
+  display inline-block
+  margin 5px
+  background black
+
+#joystick
+  width 225px
+  height 225px
+  border-radius 100%
+  display inline-block
+  margin 6px
+  border 5px solid black
+  position relative
+  background #444444
+#circlepad
+  width 100px
+  height 100px
+  position absolute
+  margin-left -50px
+  margin-top -50px
+  top 112.5px
+  left 112.5px
+
+label > input{ /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+label > input + img{ /* IMAGE STYLES */
+  cursor:pointer;
+  border:2px solid transparent;
+}
+label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  border:2px solid #000;
+}
+
+label > input + div{ /* IMAGE STYLES */
+  cursor:pointer;
+  border:2px solid transparent;
+}
+
+label > input:checked + div{ /* (RADIO CHECKED) IMAGE STYLES */
+  border:2px solid #000;
+}
+
+label > input:checked + div.mode{ /* (RADIO CHECKED) IMAGE STYLES */
+  border 2px solid transparent
+  border-bottom 2px solid gray
+}
+
+#character canvas
+  width 250px
+  height 200px
+
+#stats
+  font-size 22px
+
+.mode
+  padding 5px
+  display inline-block
+
+  

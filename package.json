@@ -1,0 +1,28 @@
+{
+  "name": "motemote",
+  "description": "Push your friends around in this casual web browser game using your mobile phone as a controller!",
+  "contributors": [
+    {"name": "Meghana Baht"},
+    {"name": "Kathy Wu"},
+    {"name": "Willy Wu"}
+  ],
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/willy-vvu/motemote"
+  },
+  "scripts": {
+    "start": "coffee -w server.coffee"
+  },
+  "dependencies": {
+    "auto-reload-brunch": ">= 1.0 < 1.8",
+    "clean-css-brunch": ">= 1.0 < 1.8",
+    "coffee-script-brunch": "^1.8.1",
+    "css-brunch": ">= 1.0 < 1.8",
+    "express": "^4.11.2",
+    "javascript-brunch": ">= 1.0 < 1.8",
+    "socket.io": "^1.3.3",
+    "stylus-brunch": "^1.8.1",
+    "uglify-js-brunch": ">= 1.0 < 1.8"
+  }
+}
